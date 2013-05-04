@@ -7,60 +7,130 @@
   clear: both;
 }
 
-/* ------------------------------------------------------------------------- */
-
-#header{
-  height: 50px;
-  background: #eee;
-  margin-bottom: 20px;
+body{
+  margin: 0;
+  padding: 0;
+  background: #E0D6D5;
 }
+
+/* ------------------------------------------------------------------------- */
 
 #container{
   margin: 0 auto;
-  width: 835px;
-}
-
-#main{
-  float: left;
-  width: 560px;
-}
-
-#sidebar{
-  float: right;
-  width: 260px;
+  width: 896px;
+  min-height: 750px;
+  background: url(images/bg.png);
+  position: relative;
 }
 
 /* ------------------------------------------------------------------------- */
 
-#profile{
-  background: #ccc;
-  padding: 10px;
+#new_chirp{
+  width: 494px;
+  height: 146px;
+  background: url(images/new_chirp.png);
+  position: relative;
+  top: 345px;
+  left: 72px;
+}
+#chirp_button{
+  position: absolute;
+  bottom: 3px;
+  right: 7px;
+}
+textarea{
+  border: none;
+  background: transparent;
+  width: 470px;
+  height: 82px;
+  position: relative;
+  top: 8px;
+  left: 8px;
+  font-size: 16px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  outline: none;
 }
 
-#stats{
-  background: #aaa;
-  padding: 10px;
+#stat1, #stat2, #stat3{
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  color: #353535;
+  position: absolute;
+  top: 534px;
+}
+#stat1{
+  left: 54px;
+}
+#stat2{
+  left: 172px;
+}
+#stat3{
+  left: 286px;
 }
 
 /* ------------------------------------------------------------------------- */
+
 
 #responses{
-  background: #eee;
-  padding: 10px;
-  margin-top: 30px;
+  margin-top: 467px;
+  margin-left: 40px;
+  padding-bottom: 300px;
+}
+#r1, #r2, #r3{
+  width: 561px;
+}
+#r1{
+  background: url(images/c1.png);
+  height: 96px;
+}
+#r2{
+  background: url(images/c2.png) repeat-y;
+}
+#r3{
+  background: url(images/c3.png);
+  height: 74px;
 }
 
 .response{
   position: relative;
-  border-top: 1px solid #999;
-  margin: 10px 0;
-  padding: 10px 0;
+  border-bottom: 2px solid #d2d0cd;
+  padding: 20px 0;
   display: none;
+  width: 508px;
+  left: 25px;
 }
 
 .response img{
   float: left;
-  width: 50px;
+  width: 42px;
+  border-radius: 6px;
+}
+
+.response .content h5{
+  color: #a7b5bc;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.response .content p{
+  color: #52788f;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.response .content a{
+  color: #baa19e;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Arial;
+  opacity: 0.5;
+}
+
+.response .timestamp{
+  color: #353535;
+  font-size: 14px;
+  font-family: Arial;
 }
 
 .response .content{
@@ -71,6 +141,7 @@
 .response .content *{
   margin: 0;
   padding: 0;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 }
 
 .response .timestamp{

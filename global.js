@@ -1,11 +1,20 @@
 $(document).ready(function(){
+  $("textarea").on('focus', function(e){
+    $(this).text("");
+  });
+  
   $("#chirp_button").on('click', function(e){
     
-    var responses = $(".response:hidden").length;
+    $("#stat1").text("1");
+    $("#responses").fadeIn();
     
     function show_response(){
-      $('html, body').animate({scrollTop: 9999}, 'fast');
+      // $('html, body').animate({scrollTop: 9999}, 'fast');
       $(".response:hidden").first().fadeIn();
+      
+      // Update the birds-eye-count.
+      var b = parseInt($("#stat3").text());
+      $("#stat3").text(b+1);
     }
     
     window.setTimeout(show_response, 3*1000);
@@ -18,11 +27,6 @@ $(document).ready(function(){
     window.setTimeout(show_response, 11*1000);
     window.setTimeout(show_response, 11*1000);
     window.setTimeout(show_response, 11*1000);
-    window.setTimeout(show_response, 12*1000);
-    window.setTimeout(show_response, 14*1000);
-    window.setTimeout(show_response, 15*1000);
-    window.setTimeout(show_response, 16*1000);
-    window.setTimeout(show_response, 17*1000);
     
     e.preventDefault();
   });
