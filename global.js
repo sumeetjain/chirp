@@ -18,15 +18,15 @@ $(document).ready(function(){
     }
     
     window.setTimeout(show_response, 3*1000);
-    window.setTimeout(show_response, 4*1000);
     window.setTimeout(show_response, 6*1000);
-    window.setTimeout(show_response, 7*1000);
     window.setTimeout(show_response, 8*1000);
-    window.setTimeout(show_response, 9*1000);
     window.setTimeout(show_response, 10*1000);
-    window.setTimeout(show_response, 11*1000);
-    window.setTimeout(show_response, 11*1000);
-    window.setTimeout(show_response, 11*1000);
+    window.setTimeout(show_response, 15*1000);
+    window.setTimeout(show_response, 18*1000);
+    window.setTimeout(show_response, 19*1000);
+    window.setTimeout(show_response, 29*1000);
+    window.setTimeout(show_response, 47*1000);
+    window.setTimeout(show_response, 56*1000);
     
     e.preventDefault();
   });
